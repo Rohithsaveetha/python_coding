@@ -1,0 +1,6 @@
+def is_palindrome(num):
+    num = str(num)
+    if num == num[::-1]:
+        return " it is a palindrome number"
+    return "not a palindrome number"
+print(is_palindrome(121))
