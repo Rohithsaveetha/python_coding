@@ -1,0 +1,10 @@
+def is_prime(n):
+    if n<=1:
+        return "not a prime number"
+    else:
+        for i in range(2, int(n**0.5)+1):
+            if n % i ==0:
+                return "it is not a prime number"
+            return "it is a prime number"
+result = int(input("enter the number to check "))
+print(is_prime(result))
